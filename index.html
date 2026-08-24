@@ -176,6 +176,20 @@ body.lang-ja{font-family:'Noto Sans JP','Noto Sans TC',-apple-system,sans-serif;
 .op-key{display:inline-block;padding:.05rem .4rem;background:var(--text);color:#fff;border-radius:.2rem;font-size:.688rem;font-weight:600;margin:0 .15rem;}
 .op-key.gray{background:var(--gray);}
 
+
+/* EMAIL MOCKUP */
+.mail{border:1px solid var(--border);border-radius:.4rem;overflow:hidden;background:#fff;margin-top:.5rem;}
+.mail-bar{padding:.4rem .7rem;background:#f9f9f9;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:.4rem;font-size:.625rem;}
+.mail-dot{width:1.1rem;height:1.1rem;border-radius:50%;background:#10a37f;color:#fff;display:flex;align-items:center;justify-content:center;font-size:.5rem;flex-shrink:0;}
+.mail-subj{font-weight:600;color:var(--text);}
+.mail-from{color:var(--text3);margin-left:auto;}
+.mail-body{padding:.8rem;text-align:center;font-size:.688rem;color:var(--text2);line-height:1.8;}
+.mail-cta{display:inline-block;margin-top:.5rem;padding:.35rem 1rem;background:#10a37f;color:#fff;border-radius:.25rem;font-size:.688rem;font-weight:600;}
+.mail-time{font-size:.563rem;color:var(--text3);margin-top:.4rem;}
+.mail-seq{display:flex;align-items:center;gap:.5rem;margin:.6rem 0 .3rem;font-size:.688rem;font-weight:600;color:var(--text2);}
+.mail-seq-n{width:1.2rem;height:1.2rem;border-radius:50%;background:var(--text);color:#fff;font-size:.563rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.mail-gap{text-align:center;padding:.4rem;color:var(--text3);font-size:.625rem;}
+
 /* UI MOCKUP */
 .mock{margin-top:.8rem;border:1px solid var(--border);border-radius:.5rem;overflow:hidden;background:#fff;}
 .mock-cap{font-size:.625rem;color:var(--text3);padding:.35rem .7rem;background:var(--bg2);border-bottom:1px solid var(--border);display:flex;align-items:center;gap:.3rem;}
@@ -262,7 +276,7 @@ body.lang-ja{font-family:'Noto Sans JP','Noto Sans TC',-apple-system,sans-serif;
         <div class="warn-num">1</div>
         <div>
           <div class="warn-title" data-zh="備份完成前，不要取消 Plus" data-ja="バックアップ完了前に Plus を解約しない">備份完成前，不要取消 Plus</div>
-          <div class="warn-desc" data-zh="資料匯出最多需等 7 天。務必確認新帳號可正常使用後，才取消個人訂閱。" data-ja="データのエクスポートには最大7日かかります。新アカウントの動作確認後に解約してください。">資料匯出最多需等 7 天。務必確認新帳號可正常使用後，才取消個人訂閱。</div>
+          <div class="warn-desc" data-zh="資料匯出實測約需 1 天（官方說明可能需要數天）。務必確認新帳號可正常使用後，才取消個人訂閱。" data-ja="データのエクスポートは実測で約1日（公式には数日かかる場合あり）。新アカウントの動作確認後に解約してください。">資料匯出實測約需 1 天（官方說明可能需要數天）。務必確認新帳號可正常使用後，才取消個人訂閱。</div>
         </div>
       </div>
       <div class="warn-item">
@@ -306,7 +320,7 @@ body.lang-ja{font-family:'Noto Sans JP','Noto Sans TC',-apple-system,sans-serif;
   <!-- 階段一：備份 -->
   <div class="sec">
     <div class="sec-head blue"><i class="fas fa-download"></i><span data-zh="階段一：備份個人資料（8/25 當週執行）" data-ja="ステージ1：個人データのバックアップ（8/25 の週に実施）">階段一：備份個人資料（8/25 當週執行）</span></div>
-    <p class="sec-intro" data-zh="在個人 ChatGPT 帳號中完成。此階段請勿取消 Plus 訂閱。<b>匯出最長需等 7 天，請於說明會當天就送出匯出申請</b>，其餘步驟可後續補做。" data-ja="個人 ChatGPT アカウントで実施します。この段階では Plus を解約しないでください。<b>エクスポートには最大7日かかるため、説明会当日に申請を送信してください</b>。他の手順は後日でも構いません。">在個人 ChatGPT 帳號中完成。此階段請勿取消 Plus 訂閱。匯出最長需等 7 天，請於說明會當天就送出匯出申請，其餘步驟可後續補做。</p>
+    <p class="sec-intro" data-zh="在個人 ChatGPT 帳號中完成。此階段請勿取消 Plus 訂閱。<b>請於說明會當天就送出匯出申請</b>（實測約 1 天後可下載），其餘步驟可後續補做。" data-ja="個人 ChatGPT アカウントで実施します。この段階では Plus を解約しないでください。<b>説明会当日にエクスポート申請を送信してください</b>（実測では約1日で取得可能）。他の手順は後日でも構いません。">在個人 ChatGPT 帳號中完成。此階段請勿取消 Plus 訂閱。請於說明會當天就送出匯出申請（實測約 1 天後可下載），其餘步驟可後續補做。</p>
     <div class="flow">
       <div class="step blue">
         <div class="step-num">1</div>
@@ -321,7 +335,7 @@ body.lang-ja{font-family:'Noto Sans JP','Noto Sans TC',-apple-system,sans-serif;
         <div class="step-body">
           <div class="step-icon"><i class="fas fa-file-export"></i></div>
           <div class="step-title" data-zh="申請資料匯出" data-ja="データエクスポートを申請">申請資料匯出</div>
-          <div class="step-desc" data-zh="送出後等 OpenAI 寄下載連結" data-ja="送信後、OpenAI からのダウンロードリンクを待つ">送出後等 OpenAI 寄下載連結</div>
+          <div class="step-desc" data-zh="送出後會收到兩封信，第二封才有下載連結" data-ja="2通のメールが届き、2通目にダウンロードリンク">送出後會收到兩封信，第二封才有下載連結</div>
           <span class="step-path">Settings → Data Controls → Export Data</span>
         </div>
       </div>
@@ -486,7 +500,8 @@ body.lang-ja{font-family:'Noto Sans JP','Noto Sans TC',-apple-system,sans-serif;
             <div class="op-step"><div class="op-step-txt" data-zh="在左側選單點 <span class='op-key'>資料控管 Data controls</span>" data-ja="左側メニューの <span class='op-key'>データ管理 Data controls</span> をクリック">在左側選單點 <span class="op-key">資料控管 Data controls</span></div></div>
             <div class="op-step"><div class="op-step-txt" data-zh="找到<b>匯出資料 Export data</b> 這一列，點右邊的 <span class='op-key'>匯出 Export</span>" data-ja="<b>データをエクスポート Export data</b> の行を見つけ、右の <span class='op-key'>エクスポート Export</span> をクリック">找到<b>匯出資料 Export data</b> 這一列，點右邊的 <span class="op-key">匯出 Export</span></div></div>
             <div class="op-step"><div class="op-step-txt" data-zh="在確認視窗點 <span class='op-key'>確認匯出 Confirm export</span>" data-ja="確認画面で <span class='op-key'>エクスポートを確認 Confirm export</span> をクリック">在確認視窗點 <span class="op-key">確認匯出 Confirm export</span></div></div>
-            <div class="op-step"><div class="op-step-txt" data-zh="等待 OpenAI 寄來下載信。<b>最長可能需要 7 天</b>，請盡早申請" data-ja="OpenAI からのダウンロードメールを待つ。<b>最大7日かかる場合あり</b>、早めの申請を">等待 OpenAI 寄來下載信。<b>最長可能需要 7 天</b>，請盡早申請</div></div>
+            <div class="op-step"><div class="op-step-txt" data-zh="送出後會先收到<b>第一封「已開始」通知信</b>，這封<b>沒有下載連結</b>，不用做任何事" data-ja="送信後、まず<b>1通目「開始しました」通知</b>が届きます。<b>ダウンロードリンクはありません</b>。何もする必要はありません">送出後會先收到<b>第一封「已開始」通知信</b>，這封<b>沒有下載連結</b>，不用做任何事</div></div>
+            <div class="op-step"><div class="op-step-txt" data-zh="等待<b>第二封「已就緒」信</b>，裡面才有綠色的下載按鈕。<b>實測約 24 小時後寄達</b>（官方說明為可能需要數天）" data-ja="<b>2通目「準備完了」メール</b>を待ちます。緑のダウンロードボタンはこちらに含まれます。<b>実測では約24時間後に到着</b>（公式には数日かかる場合あり）">等待<b>第二封「已就緒」信</b>，裡面才有綠色的下載按鈕。<b>實測約 24 小時後寄達</b>（官方說明為可能需要數天）</div></div>
           </div>
 
           <div class="mock">
@@ -519,7 +534,43 @@ body.lang-ja{font-family:'Noto Sans JP','Noto Sans TC',-apple-system,sans-serif;
             </div>
           </div>
 
+
+          <div class="mock">
+            <div class="mock-cap"><i class="fas fa-envelope"></i> <span data-zh="你會收到兩封信（實測間隔 24 小時）" data-ja="メールは2通届きます（実測の間隔は24時間）">你會收到兩封信（實測間隔 24 小時）</span></div>
+            <div style="padding:.7rem;">
+              <div class="mail-seq"><div class="mail-seq-n">1</div><span data-zh="申請當下收到｜這封沒有下載連結" data-ja="申請直後に受信｜ダウンロードリンクなし">申請當下收到｜這封沒有下載連結</span></div>
+              <div class="mail">
+                <div class="mail-bar">
+                  <div class="mail-dot"><i class="fas fa-circle-nodes"></i></div>
+                  <span class="mail-subj" data-zh="ChatGPT - 你的資料匯出作業已開始" data-ja="ChatGPT - データのエクスポートを開始しました">ChatGPT - 你的資料匯出作業已開始</span>
+                  <span class="mail-from">noreply@tm.openai.com</span>
+                </div>
+                <div class="mail-body">
+                  <span data-zh="我們已開始準備你的資料匯出，完成後會再寄信通知。" data-ja="データのエクスポート準備を開始しました。完了後に改めてご連絡します。">我們已開始準備你的資料匯出，完成後會再寄信通知。</span>
+                  <div class="mail-time" data-zh="範例：8/21（五）17:02" data-ja="例：8/21（金）17:02">範例：8/21（五）17:02</div>
+                </div>
+              </div>
+
+              <div class="mail-gap"><i class="fas fa-arrow-down"></i> <span data-zh="實測約 24 小時" data-ja="実測約24時間">實測約 24 小時</span></div>
+
+              <div class="mail-seq"><div class="mail-seq-n">2</div><span data-zh="這封才有下載按鈕｜收到後 24 小時內要下載" data-ja="このメールにダウンロードボタン｜受信後24時間以内に">這封才有下載按鈕｜收到後 24 小時內要下載</span></div>
+              <div class="mail">
+                <div class="mail-bar">
+                  <div class="mail-dot"><i class="fas fa-circle-nodes"></i></div>
+                  <span class="mail-subj" data-zh="ChatGPT - 你的資料匯出作業已就緒" data-ja="ChatGPT - データのエクスポートが完了しました">ChatGPT - 你的資料匯出作業已就緒</span>
+                  <span class="mail-from">noreply@tm.openai.com</span>
+                </div>
+                <div class="mail-body">
+                  <span data-zh="你的資料匯出作業已準備就緒。請點選下方連結來下載你的資料。" data-ja="データのエクスポートが完了しました。下のリンクからダウンロードしてください。">你的資料匯出作業已準備就緒。請點選下方連結來下載你的資料。</span><br>
+                  <span class="mail-cta hl" style="position:relative;"><span data-zh="下載資料匯出" data-ja="データをダウンロード">下載資料匯出</span><span class="hl-tag" data-zh="點這裡" data-ja="ここをクリック">點這裡</span></span>
+                  <div class="mail-time" data-zh="範例：8/22（六）17:02" data-ja="例：8/22（土）17:02">範例：8/22（六）17:02</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div class="op-note d"><i class="fas fa-circle-exclamation"></i> <b data-zh="最重要：" data-ja="最重要：">最重要：</b><span data-zh="ChatGPT Business 帳號無法自行匯出資料。一旦轉入公司帳號，就不能再用這個功能。所有備份都必須在個人帳號還是 Plus／Free 時完成。" data-ja="ChatGPT Business アカウントでは自分でデータをエクスポートできません。会社アカウントに移行後はこの機能を使えないため、バックアップは個人アカウントのうちに完了させてください。">ChatGPT Business 帳號無法自行匯出資料。一旦轉入公司帳號，就不能再用這個功能。所有備份都必須在個人帳號還是 Plus／Free 時完成。</span></div>
+          <div class="op-note w"><i class="fas fa-shield-halved"></i> <b data-zh="辨識真偽：" data-ja="真偽の見分け方：">辨識真偽：</b><span data-zh="兩封信的寄件者都是 <b>noreply@tm.openai.com</b>。若收到來自其他網域、或要求輸入密碼的信件，請勿點擊，並通知資訊組。" data-ja="いずれも送信元は <b>noreply@tm.openai.com</b> です。他のドメインからのメールやパスワード入力を求めるメールはクリックせず、情報部門へ連絡してください。">兩封信的寄件者都是 noreply@tm.openai.com。若收到來自其他網域、或要求輸入密碼的信件，請勿點擊，並通知資訊組。</span></div>
           <div class="op-note w"><i class="fas fa-clock"></i> <span data-zh="匯出不會包含已刪除的對話。若有重要對話曾被刪除，無法透過匯出救回。" data-ja="削除済みの会話はエクスポートに含まれません。削除した重要な会話は復元できません。">匯出不會包含已刪除的對話。若有重要對話曾被刪除，無法透過匯出救回。</span></div>
         </div>
       </div>
@@ -534,8 +585,8 @@ body.lang-ja{font-family:'Noto Sans JP','Noto Sans TC',-apple-system,sans-serif;
         </div>
         <div class="op-body">
           <div class="op-steps">
-            <div class="op-step"><div class="op-step-txt" data-zh="收到 OpenAI 的信後<b>立即處理</b>，主旨通常包含 ChatGPT data export" data-ja="OpenAI のメールを受信したら<b>すぐ対応</b>。件名には通常 ChatGPT data export が含まれる">收到 OpenAI 的信後<b>立即處理</b>，主旨通常包含 ChatGPT data export</div></div>
-            <div class="op-step"><div class="op-step-txt" data-zh="確認<b>同一個帳號仍在登入狀態</b>，再點信中的 <span class='op-key'>Download data export</span>" data-ja="<b>同じアカウントでログイン中</b>であることを確認してから、メール内の <span class='op-key'>Download data export</span> をクリック">確認<b>同一個帳號仍在登入狀態</b>，再點信中的 <span class="op-key">Download data export</span></div></div>
+            <div class="op-step"><div class="op-step-txt" data-zh="收到<b>第二封「已就緒」</b>的信後<b>立即處理</b>，主旨為「你的資料匯出作業已就緒」" data-ja="<b>2通目「準備完了」</b>のメールを受信したら<b>すぐ対応</b>。件名は「データのエクスポートが完了しました」">收到<b>第二封「已就緒」</b>的信後<b>立即處理</b>，主旨為「你的資料匯出作業已就緒」</div></div>
+            <div class="op-step"><div class="op-step-txt" data-zh="確認<b>同一個帳號仍在登入狀態</b>，再點信中綠色的 <span class='op-key'>下載資料匯出</span> 按鈕" data-ja="<b>同じアカウントでログイン中</b>であることを確認し、メール内の緑の <span class='op-key'>データをダウンロード</span> ボタンをクリック">確認<b>同一個帳號仍在登入狀態</b>，再點信中的 <span class="op-key">Download data export</span></div></div>
             <div class="op-step"><div class="op-step-txt" data-zh="下載 ZIP 檔到<b>自己的電腦</b>（不要存到公司共用資料夾）" data-ja="ZIP を<b>自分のPC</b>にダウンロード（会社の共有フォルダには保存しない）">下載 ZIP 檔到<b>自己的電腦</b>（不要存到公司共用資料夾）</div></div>
             <div class="op-step"><div class="op-step-txt" data-zh="解壓縮，確認裡面有 <span class='op-key gray'>conversations.json</span> 與 <span class='op-key gray'>chat.html</span>（大型匯出可能是多個編號檔案）" data-ja="解凍して <span class='op-key gray'>conversations.json</span> と <span class='op-key gray'>chat.html</span> があることを確認（大容量の場合は番号付きファイル）">解壓縮，確認裡面有 <span class="op-key gray">conversations.json</span> 與 <span class="op-key gray">chat.html</span>（大型匯出可能是多個編號檔案）</div></div>
             <div class="op-step"><div class="op-step-txt" data-zh="用瀏覽器開啟 chat.html，檢查：中文<b>沒有亂碼</b>、最早與最新對話日期<b>符合預期</b>、搜尋幾個重要關鍵字<b>都找得到</b>" data-ja="ブラウザで chat.html を開き確認：日本語/中国語が<b>文字化けしない</b>、最古と最新の日付が<b>想定どおり</b>、重要キーワードが<b>検索できる</b>">用瀏覽器開啟 chat.html，檢查：中文<b>沒有亂碼</b>、最早與最新對話日期<b>符合預期</b>、搜尋幾個重要關鍵字<b>都找得到</b></div></div>
